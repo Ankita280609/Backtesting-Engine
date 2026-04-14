@@ -9,7 +9,7 @@ A self-hosted, high-performance backtesting engine designed to replicate and ext
 * **High-Speed Iteration:** Process thousands of parameter variations in bulk using a highly optimized local data pipeline.
 
 ## 🏗️ System Architecture
-[]The engine operates on a clean, multi-layered architecture:
+The engine operates on a clean, multi-layered architecture:
 1.**Data Infrastructure:** Ingests OHLCV and fundamentals into partitioned Parquet files, queried via DuckDB with Redis caching.
 2. **FEL Expression Engine:** A 4-stage pipeline (Lexer -> Parser -> AST -> Evaluator) built with Lark that maps strings to array operations.
 3.**Operator Library:** A comprehensive suite of cross-sectional and time-series operators (e.g., `ts_mean`, `rank`, `neutralize`) accelerated by Numba JIT.
